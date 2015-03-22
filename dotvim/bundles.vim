@@ -31,6 +31,7 @@ NeoBundle 'scrooloose/syntastic'        " Syntax checking on save
 NeoBundle 'tpope/vim-dispatch'          " Async external commands with output in vim
 NeoBundle 'taglist.vim'                 " Tag list navigation
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'rking/ag.vim'
 
 " Ruby
 NeoBundle 'tpope/vim-rails'
