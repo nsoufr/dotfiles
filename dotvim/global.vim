@@ -26,4 +26,7 @@ set list
 " Do not create swap files
 set noswapfile
 
+" Copy support
+set clipboard=unnamed
+
 source ~/.vim/plugins.vim

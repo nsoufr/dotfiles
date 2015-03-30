@@ -28,10 +28,13 @@ NeoBundle 'AutoComplPop'                " Autocomplete
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-fugitive'          " Git integration
 NeoBundle 'scrooloose/syntastic'        " Syntax checking on save
-NeoBundle 'tpope/vim-dispatch'          " Async external commands with output in vim
 NeoBundle 'taglist.vim'                 " Tag list navigation
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'rking/ag.vim'
+
+" Async external commands with output in vim
+" https://github.com/tpope/vim-dispatch/issues/9
+NeoBundle 'tpope/vim-dispatch', { 'branch' : 'isolate' }
 
 " Ruby
 NeoBundle 'tpope/vim-rails'
@@ -42,7 +45,8 @@ NeoBundle 'josemarluedke/vim-rspec'
 NeoBundle 'Blackrush/vim-gocode'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-markdown'
-
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 't9md/vim-ruby-xmpfilter'
 
 " Colorschemes
 NeoBundle 'altercation/vim-colors-solarized'

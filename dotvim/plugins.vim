@@ -25,7 +25,9 @@ vnoremap > >gv
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
+" Tlist
 let Tlist_Show_Menu=1
+let Tlist_Highlight_Tag_On_BufEnter = 1
 nmap <leader>t :TlistToggle<CR>
 
 let g:ctrlp_map = '<leader>,'
@@ -72,3 +74,20 @@ autocmd FileType haml let b:switch_definitions =
       \   g:switch_builtins.true_false,
       \   g:switch_builtins.true_false,
       \ ]
+
+
+"XMP Filter
+let g:xmpfilter_cmd = "seeing_is_believing"
+
+autocmd FileType ruby nmap <leader>E <Plug>(seeing_is_believing-mark)
+autocmd FileType ruby xmap <leader>E <Plug>(seeing_is_believing-mark)
+autocmd FileType ruby imap <leader>E<Plug>(seeing_is_believing-mark)
+
+autocmd FileType ruby nmap <leader>c <Plug>(seeing_is_believing-clean)
+autocmd FileType ruby xmap <leader>c <Plug>(seeing_is_believing-clean)
+autocmd FileType ruby imap <leader>c <Plug>(seeing_is_believing-clean)
+
+" auto insert mark at appropriate spot.
+autocmd FileType ruby nmap <leader>e <Plug>(seeing_is_believing-run)
+autocmd FileType ruby xmap <leader>e <Plug>(seeing_is_believing-run)
+autocmd FileType ruby imap <leader>e <Plug>(seeing_is_believing-run)
