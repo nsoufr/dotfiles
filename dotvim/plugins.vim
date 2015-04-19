@@ -1,3 +1,5 @@
+runtime macros/matchit.vim
+
 " RSpec.vim mappings
 map <Leader>R :call RunCurrentSpecFile()<CR>
 map <Leader>N :call RunNearestSpec()<CR>
