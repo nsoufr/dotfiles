@@ -41,6 +41,14 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'josemarluedke/vim-rspec'
 
+" Custom textobjects
+NeoBundle 'kana/vim-textobj-user.git'
+NeoBundle 'kana/vim-textobj-entire.git'
+NeoBundle 'kana/vim-textobj-indent.git'
+NeoBundle 'kana/vim-textobj-syntax.git'
+NeoBundle 'kana/vim-textobj-line.git'
+NeoBundle 'nelstrom/vim-textobj-rubyblock.git'
+
 " Syntax support
 NeoBundle 'Blackrush/vim-gocode'
 NeoBundle 'vim-ruby/vim-ruby'
