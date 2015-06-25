@@ -21,7 +21,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " General
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'greplace.vim'
-NeoBundle 'bling/vim-airline'
+" NeoBundle 'bling/vim-airline'
 NeoBundle 'Indent-Guides'
 NeoBundle 'AndrewRadev/switch.vim'
 NeoBundle 'AutoComplPop'                " Autocomplete
@@ -50,6 +50,7 @@ NeoBundle 'kana/vim-textobj-line.git'
 NeoBundle 'nelstrom/vim-textobj-rubyblock.git'
 
 " Syntax support
+NeoBundle "elixir-lang/vim-elixir"
 NeoBundle 'Blackrush/vim-gocode'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-markdown'
