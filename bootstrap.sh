@@ -5,6 +5,9 @@ cd "$(dirname "${HOME}")";
 git clone https://github.com/nandosousafr/dotfiles.git;
 
 function doIt() {
+  ln -s dotfiles/dotvim .vim;
+  ln -s dotfiles/vimrc .vimrc;
+
 	curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh;
 }
 

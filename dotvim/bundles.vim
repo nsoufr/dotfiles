@@ -51,15 +51,24 @@ NeoBundle 'nelstrom/vim-textobj-rubyblock.git'
 
 " Syntax support
 NeoBundle "elixir-lang/vim-elixir"
-NeoBundle 'Blackrush/vim-gocode'
+NeoBundle 'fatih/vim-go'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 't9md/vim-ruby-xmpfilter'
 NeoBundle 'slim-template/vim-slim'
+NeoBundle 'kchmck/vim-coffee-script'
+
 
 " Colorschemes
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'endel/vim-github-colorscheme'
+NeoBundle 'gilgigilgil/anderson.vim'
+
+
+" Tools 
+NeoBundle 'godlygeek/tabular'
+
 
 call neobundle#end()
 

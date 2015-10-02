@@ -2,7 +2,7 @@ source ~/.vim/bundles.vim " load plugins
 
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme anderson 
 
 " Set map
 let mapleader = ","
@@ -28,5 +28,7 @@ set noswapfile
 
 " Copy support
 set clipboard=unnamed
+
+set backspace=indent,eol,start
 
 source ~/.vim/plugins.vim

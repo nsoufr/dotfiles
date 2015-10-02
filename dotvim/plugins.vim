@@ -1,4 +1,9 @@
 runtime macros/matchit.vim
+" JSON Pretty Print
+map <leader>j :%!python -m json.tool<CR>
+
+" Enable Go imports
+let g:go_fmt_command = "goimports"
 
 " RSpec.vim mappings
 map <Leader>R :call RunCurrentSpecFile()<CR>
