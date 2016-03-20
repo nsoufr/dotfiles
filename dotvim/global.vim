@@ -2,7 +2,7 @@ source ~/.vim/bundles.vim " load plugins
 
 syntax enable
 set background=dark
-colorscheme anderson 
+colorscheme torte 
 
 " Set map
 let mapleader = ","

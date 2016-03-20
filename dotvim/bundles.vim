@@ -31,10 +31,7 @@ NeoBundle 'scrooloose/syntastic'        " Syntax checking on save
 NeoBundle 'taglist.vim'                 " Tag list navigation
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'rking/ag.vim'
-
-" Async external commands with output in vim
-" https://github.com/tpope/vim-dispatch/issues/9
-NeoBundle 'tpope/vim-dispatch', { 'branch' : 'isolate' }
+NeoBundle 'majutsushi/tagbar'
 
 " Ruby
 NeoBundle 'tpope/vim-rails'
@@ -47,18 +44,15 @@ NeoBundle 'kana/vim-textobj-entire.git'
 NeoBundle 'kana/vim-textobj-indent.git'
 NeoBundle 'kana/vim-textobj-syntax.git'
 NeoBundle 'kana/vim-textobj-line.git'
-NeoBundle 'nelstrom/vim-textobj-rubyblock.git'
 
 " Syntax support
 NeoBundle "elixir-lang/vim-elixir"
 NeoBundle 'fatih/vim-go'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-markdown'
-NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 't9md/vim-ruby-xmpfilter'
 NeoBundle 'slim-template/vim-slim'
-NeoBundle 'kchmck/vim-coffee-script'
-
+NeoBundle 'vim-scripts/c.vim'
 
 " Colorschemes
 NeoBundle 'altercation/vim-colors-solarized'
