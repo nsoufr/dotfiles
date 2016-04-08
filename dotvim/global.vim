@@ -1,8 +1,8 @@
 source ~/.vim/bundles.vim " load plugins
 
 syntax enable
-set background=dark
-colorscheme torte 
+set background=light
+colorscheme heroku-terminal
 
 " Set map
 let mapleader = ","
