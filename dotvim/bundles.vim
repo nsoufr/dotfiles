@@ -53,6 +53,7 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 't9md/vim-ruby-xmpfilter'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'vim-scripts/c.vim'
+NeoBundle 'lambdatoast/elm.vim'
 
 " Colorschemes
 NeoBundle 'altercation/vim-colors-solarized'
