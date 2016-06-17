@@ -21,12 +21,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " General
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'greplace.vim'
-" NeoBundle 'bling/vim-airline'
 NeoBundle 'Indent-Guides'
-NeoBundle 'AndrewRadev/switch.vim'
-NeoBundle 'AutoComplPop'                " Autocomplete
 NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'tpope/vim-fugitive'          " Git integration
 NeoBundle 'scrooloose/syntastic'        " Syntax checking on save
 NeoBundle 'taglist.vim'                 " Tag list navigation
 NeoBundle 'kien/ctrlp.vim'
@@ -36,7 +32,6 @@ NeoBundle 'majutsushi/tagbar'
 " Ruby
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-bundler'
-NeoBundle 'josemarluedke/vim-rspec'
 
 " Custom textobjects
 NeoBundle 'kana/vim-textobj-user.git'
@@ -49,17 +44,12 @@ NeoBundle 'kana/vim-textobj-line.git'
 NeoBundle "elixir-lang/vim-elixir"
 NeoBundle 'fatih/vim-go'
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-markdown'
-NeoBundle 't9md/vim-ruby-xmpfilter'
-NeoBundle 'slim-template/vim-slim'
 NeoBundle 'vim-scripts/c.vim'
 NeoBundle 'lambdatoast/elm.vim'
 
 " Colorschemes
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'endel/vim-github-colorscheme'
 NeoBundle 'gilgigilgil/anderson.vim'
-NeoBundle 'stulzer/heroku-colorscheme'
 
 " Tools 
 NeoBundle 'godlygeek/tabular'
