@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "${HOME}")";
+cd "$HOME";
 
 git clone https://github.com/nandosousafr/dotfiles.git;
 
 function doIt() {
+  mv .vim vim-backup
   ln -s dotfiles/dotvim .vim;
   ln -s dotfiles/vimrc .vimrc;
 
@@ -20,4 +21,4 @@ else
 		doIt;
 	fi;
 fi;
-unset doIt;
+unset doIt;	
