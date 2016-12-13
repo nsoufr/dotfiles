@@ -48,10 +48,9 @@ NeoBundle 'vim-scripts/c.vim'
 NeoBundle 'lambdatoast/elm.vim'
 
 " Colorschemes
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'gilgigilgil/anderson.vim'
+NeoBundle 'stulzer/heroku-colorscheme'
 
-" Tools 
+" Tools
 NeoBundle 'godlygeek/tabular'
 
 
