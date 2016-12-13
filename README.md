@@ -3,5 +3,5 @@
 ## Installation
 
 ```
-https://raw.githubusercontent.com/nandosousafr/dotfiles/master/bootstrap.sh
+curl https://raw.githubusercontent.com/nandosousafr/dotfiles/master/bootstrap.sh
 ```
