@@ -2,6 +2,9 @@
 
 cd "$HOME";
 
+# General settings
+git config --global core.editor /usr/bin/vim
+
 echo "Cloning nandosousafr/dotfiles..."
 git clone https://github.com/nandosousafr/dotfiles.git;
 
