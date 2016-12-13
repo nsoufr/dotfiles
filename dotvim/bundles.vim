@@ -52,7 +52,7 @@ NeoBundle 'stulzer/heroku-colorscheme'
 
 " Tools
 NeoBundle 'godlygeek/tabular'
-
+NeoBundle 'christoomey/vim-tmux-navigator'
 
 call neobundle#end()
 
