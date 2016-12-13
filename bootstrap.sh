@@ -6,7 +6,6 @@ echo "Cloning nandosousafr/dotfiles..."
 git clone https://github.com/nandosousafr/dotfiles.git;
 
 echo "Setting up...";
-mv .vim vim-backup
 ln -s dotfiles/dotvim .vim;
 ln -s dotfiles/vimrc .vimrc;
 
