@@ -22,6 +22,10 @@ set listchars=tab:▷⋅,trail:·,eol:$
 set listchars=tab:▷⋅,trail:·
 set list
 
+autocmd VimResized * :wincmd =
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
 " Do not create swap files
 set noswapfile
 

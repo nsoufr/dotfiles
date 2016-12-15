@@ -98,3 +98,18 @@ autocmd FileType ruby imap <leader>c <Plug>(seeing_is_believing-clean)
 autocmd FileType ruby nmap <leader>e <Plug>(seeing_is_believing-run)
 autocmd FileType ruby xmap <leader>e <Plug>(seeing_is_believing-run)
 autocmd FileType ruby imap <leader>e <Plug>(seeing_is_believing-run)
+
+" Vim-Tmux runner maps.
+
+noremap <leader>va :VtrAttachToPane<cr>
+nnoremap <leader>ror :VtrReorientRunner<cr>
+nnoremap <leader>sc :VtrSendCommandToRunner<cr>
+nnoremap <leader>sl :VtrSendLinesToRunner<cr>
+vnoremap <leader>sl :VtrSendLinesToRunner<cr>
+nnoremap <leader>or :VtrOpenRunner<cr>
+nnoremap <leader>kr :VtrKillRunner<cr>
+nnoremap <leader>fr :VtrFocusRunner<cr>
+nnoremap <leader>dr :VtrDetachRunner<cr>
+nnoremap <leader>cr :VtrClearRunner<cr>
+nnoremap <leader>fc :VtrFlushCommand<cr>
+nnoremap <leader>sf :VtrSendFile<cr>

@@ -28,6 +28,7 @@ NeoBundle 'taglist.vim'                 " Tag list navigation
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'majutsushi/tagbar'
+NeoBundle 'tpope/vim-fugitive'
 
 " Ruby
 NeoBundle 'tpope/vim-rails'
@@ -46,6 +47,8 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/c.vim'
 NeoBundle 'lambdatoast/elm.vim'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'cakebaker/scss-syntax.vim'
 
 " Colorschemes
 NeoBundle 'stulzer/heroku-colorscheme'
@@ -53,6 +56,8 @@ NeoBundle 'stulzer/heroku-colorscheme'
 " Tools
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'christoomey/vim-tmux-navigator'
+NeoBundle 'christoomey/vim-tmux-runner'
+NeoBundle 'vimwiki/vimwiki'
 
 call neobundle#end()
 
