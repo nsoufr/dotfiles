@@ -1,7 +1,7 @@
 source ~/.vim/bundles.vim " load plugins
 
 syntax enable
-colorscheme heroku-terminal
+colorscheme apprentice
 
 " Set map
 let mapleader = ","

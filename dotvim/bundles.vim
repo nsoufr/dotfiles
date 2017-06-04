@@ -51,7 +51,7 @@ NeoBundle 'slim-template/vim-slim'
 NeoBundle 'cakebaker/scss-syntax.vim'
 
 " Colorschemes
-NeoBundle 'stulzer/heroku-colorscheme'
+NeoBundle 'romainl/Apprentice'
 
 " Tools
 NeoBundle 'godlygeek/tabular'
