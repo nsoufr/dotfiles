@@ -35,3 +35,8 @@ set clipboard=unnamed
 set backspace=indent,eol,start
 
 source ~/.vim/plugins.vim
+
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
+nnoremap <C-p> "+gP
+vnoremap <C-p> "+gP

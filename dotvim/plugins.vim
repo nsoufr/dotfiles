@@ -116,3 +116,6 @@ nnoremap <leader>sf :VtrSendFile<cr>
 
 " Detect slim
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+
+" Runs neomake every write
+autocmd BufWritePost *.rb Neomake

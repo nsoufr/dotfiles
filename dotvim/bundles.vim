@@ -52,12 +52,13 @@ NeoBundle 'cakebaker/scss-syntax.vim'
 
 " Colorschemes
 NeoBundle 'romainl/Apprentice'
+NeoBundle 'dracula/vim'
 
 " Tools
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'christoomey/vim-tmux-runner'
-NeoBundle 'vimwiki/vimwiki'
+NeoBundle 'neomake/neomake'
 
 call neobundle#end()
 
