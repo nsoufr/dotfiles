@@ -1,7 +1,7 @@
 source ~/.vim/bundles.vim " load plugins
 
 syntax enable
-colorscheme apprentice
+colorscheme industry
 
 " Set map
 let mapleader = ","
