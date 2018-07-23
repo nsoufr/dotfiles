@@ -13,6 +13,7 @@ git clone https://github.com/nandosousafr/dotfiles.git;
 echo "Setting up...";
 ln -s dotfiles/dotvim .vim;
 ln -s dotfiles/vimrc .vimrc;
+ln -s dotfiles/.tmux.conf .tmux.conf;
 ln -s dotfiles/.gitignore_global .gitignore_global;
 
 git config --global core.excludesfile ~/.gitignore_global;
