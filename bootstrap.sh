@@ -2,7 +2,7 @@
 
 cd "$HOME";
 
-sudo apt-get install git-core vim
+sudo apt-get install git-core vim ctags zsh vim-gnome
 
 # General settings
 git config --global core.editor /usr/bin/vim
