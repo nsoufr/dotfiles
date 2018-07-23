@@ -2,6 +2,8 @@
 
 cd "$HOME";
 
+sudo apt-get install git-core vim
+
 # General settings
 git config --global core.editor /usr/bin/vim
 
