@@ -58,7 +58,7 @@ NeoBundle 'dracula/vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'christoomey/vim-tmux-runner'
-"NeoBundle 'neomake/neomake'
+NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
 
