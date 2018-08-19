@@ -2,7 +2,18 @@
 
 cd "$HOME";
 
-sudo apt-get install git-core vim ctags zsh vim-gnome
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
+if [ "$(machine)" == "Linux" ]; then
+	sudo apt-get install git-core vim ctags zsh vim-gnome
+fi
 
 # General settings
 git config --global core.editor /usr/bin/vim
@@ -13,10 +24,17 @@ git clone https://github.com/nandosousafr/dotfiles.git;
 echo "Setting up...";
 ln -s dotfiles/dotvim .vim;
 ln -s dotfiles/vimrc .vimrc;
-ln -s dotfiles/.tmux.conf .tmux.conf;
 ln -s dotfiles/.gitignore_global .gitignore_global;
 
 git config --global core.excludesfile ~/.gitignore_global;
+
+
+if [ "$(machine)" == "Linux" ]; then
+	ln -s dotfiles/.tmux.conf .tmux.conf;
+elif [ "$(machine)" == "Mac" ]; then
+	ln -s dotfiles/.mac-osx-tmux.conf .tmux.conf;
+fi
+
 
 echo "Fetching neobundle...";
 
