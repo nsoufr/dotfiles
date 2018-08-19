@@ -53,6 +53,7 @@ NeoBundle 'cakebaker/scss-syntax.vim'
 " Colorschemes
 NeoBundle 'romainl/Apprentice'
 NeoBundle 'dracula/vim'
+NeoBundle'wolf-dog/nighted.vim'
 
 " Tools
 NeoBundle 'godlygeek/tabular'
