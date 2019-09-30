@@ -12,6 +12,7 @@ case "${unameOut}" in
 esac
 
 if [ "$(machine)" == "Linux" ]; then
+	echo "Linux detected, installing dependencies"
 	sudo apt-get install git-core vim ctags zsh vim-gnome tmux
 fi
 
