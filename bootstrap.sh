@@ -12,7 +12,7 @@ case "${unameOut}" in
 esac
 
 if [ "$(machine)" == "Linux" ]; then
-	sudo apt-get install git-core vim ctags zsh vim-gnome
+	sudo apt-get install git-core vim ctags zsh vim-gnome tmux
 fi
 
 # General settings
