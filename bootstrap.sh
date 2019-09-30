@@ -11,7 +11,7 @@ case "${unameOut}" in
     *)          machine="UNKNOWN:${unameOut}"
 esac
 
-if [ "$(machine)" == "Linux" ]; then
+if [ $machine == "Linux" ]; then
 	echo "Linux detected, installing dependencies"
 	sudo apt-get install git-core vim ctags zsh vim-gnome tmux
 fi
@@ -30,9 +30,9 @@ ln -s dotfiles/.gitignore_global .gitignore_global;
 git config --global core.excludesfile ~/.gitignore_global;
 
 
-if [ "$(machine)" == "Linux" ]; then
+if [ $machine == "Linux" ]; then
 	ln -s dotfiles/.tmux.conf .tmux.conf;
-elif [ "$(machine)" == "Mac" ]; then
+elif [ $machine == "Mac" ]; then
 	ln -s dotfiles/.mac-osx-tmux.conf .tmux.conf;
 fi
 
