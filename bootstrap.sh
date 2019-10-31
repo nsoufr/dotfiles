@@ -13,7 +13,7 @@ esac
 
 if [ $machine == "Linux" ]; then
 	echo "Linux detected, installing dependencies"
-	sudo apt-get install git-core vim ctags zsh vim-gnome tmux
+	sudo apt-get install git-core vim ctags zsh vim-gnome tmux xclip
 fi
 
 # General settings
