@@ -1,9 +1,8 @@
+set omnifunc=syntaxcomplete#Complete
+
 runtime macros/matchit.vim
 " JSON Pretty Print
 map <leader>j :%!python -m json.tool<CR>
-
-" Enable Go imports
-let g:go_fmt_command = "goimports"
 
 " RSpec.vim mappings
 map <Leader>R :call RunCurrentSpecFile()<CR>
@@ -115,3 +114,7 @@ nnoremap <leader>fc :VtrFlushCommand<cr>
 nnoremap <leader>sf :VtrSendFile<cr>
 
 "call neomake#configure#automake('w')
+
+"vim-go
+let g:go_code_completion_enabled = 1
+let g:go_fmt_command = "goimports"

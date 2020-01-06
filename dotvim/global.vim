@@ -1,7 +1,7 @@
 source ~/.vim/bundles.vim " load plugins
 
 syntax enable
-colorscheme nighted
+colorscheme pablo
 
 " Set map
 let mapleader = ","
