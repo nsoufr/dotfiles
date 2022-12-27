@@ -30,9 +30,6 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'tpope/vim-fugitive'
 
-" Ruby
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-bundler'
 
 " Custom textobjects
 NeoBundle 'kana/vim-textobj-user.git'
@@ -42,9 +39,6 @@ NeoBundle 'kana/vim-textobj-syntax.git'
 NeoBundle 'kana/vim-textobj-line.git'
 
 " Syntax support
-NeoBundle "elixir-lang/vim-elixir"
-NeoBundle 'fatih/vim-go'
-NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/c.vim'
 NeoBundle 'lambdatoast/elm.vim'
 NeoBundle 'slim-template/vim-slim'
