@@ -3,7 +3,7 @@
 cd "$HOME";
 
 sudo apt-get update
-sudo apt-get install git-core vim zsh vim tmux xclip
+sudo apt-get install -y vim zsh vim tmux xclip
 
 echo "Cloning nandosousafr/dotfiles..."
 git clone https://github.com/nandosousafr/dotfiles.git;
