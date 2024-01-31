@@ -24,4 +24,4 @@ echo "Fetching neobundle...";
 curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh;
 
 echo "Installing vim plugins";
-vim +NeoBundleInstall +qall
+vim +NeoBundleInstall +qall &
