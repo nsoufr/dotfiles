@@ -25,7 +25,7 @@ ln -s dotfiles/.tmux.conf .tmux.conf
 
 echo 'Setting up Neovim';
 mkdir -p $HOME/.config/nvim
-ln -s dotfiles/dotvim .config/nvim/init.vim
+ln -s dotfiles/init.vim .config/nvim/init.vim
 
 echo 'Installing vim plug';
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
