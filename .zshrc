@@ -105,3 +105,4 @@ DISABLE_UPDATE_PROMPT=true
 # aliases
 alias t="terraform"
 alias k="kubctl"
+alias v="nvim ."

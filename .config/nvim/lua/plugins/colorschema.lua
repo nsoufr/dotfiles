@@ -1,12 +1,14 @@
 return {
   {
-    "craftzdog/solarized-osaka.nvim",
-    lazy = true,
-    priority = 1000,
+    "rebelot/kanagawa.nvim",
     opts = function()
       return {
-        transparent = true,
+        background =
+        {
+          dark  = "wave",
+          light = "wave"
+        }
       }
-    end,
-  },
+    end
+  }
 }
