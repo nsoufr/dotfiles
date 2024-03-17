@@ -7,6 +7,8 @@ _G.dd = function(...)
 end
 vim.print = _G.dd
 
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme catppuccin-frappe")
+
+vim.g.mapleader = ","
 
 require("nvim.lazy")

@@ -1,6 +1,3 @@
 return {
-  {
-    "sainnhe/everforest",
-  }
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
 }
-
