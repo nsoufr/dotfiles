@@ -9,6 +9,5 @@ vim.print = _G.dd
 
 vim.cmd("colorscheme catppuccin-frappe")
 
-vim.g.mapleader = ","
 
 require("nvim.lazy")

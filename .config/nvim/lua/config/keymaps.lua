@@ -1,12 +1,12 @@
 local keymap = vim.keymap
 
--- General
-keymap.mapleader = ","
-
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Telescope
 local builtin = require('telescope.builtin')
-keymap.set('n', '<leader>ff', builtin.find_files, {})
-keymap.set('n', '<C-p>', builtin.git_files, {})
+keymap.set('n', '<leader>p', builtin.find_files, {})
+keymap.set('n', '<leader>.', builtin.git_files, {})
+
+-- Neo-tree
+keymap.set('n', '<C-e>', ":Neotree toggle<CR>")
