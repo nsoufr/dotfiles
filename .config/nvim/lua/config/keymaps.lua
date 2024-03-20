@@ -10,3 +10,7 @@ keymap.set('n', '<leader>.', builtin.git_files, {})
 
 -- Neo-tree
 keymap.set('n', '<C-e>', ":Neotree toggle<CR>")
+
+-- Navigation
+keymap.set('n', 'bp', ":bp<CR>")
+keymap.set('n', 'bn', ":bn<CR>")
