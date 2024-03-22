@@ -7,6 +7,7 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 local builtin = require('telescope.builtin')
 keymap.set('n', '<leader>p', builtin.find_files, {})
 keymap.set('n', '<leader>.', builtin.git_files, {})
+keymap.set('n', '<leader>g', builtin.grep_string, {})
 
 -- Neo-tree
 keymap.set('n', '<C-e>', ":Neotree toggle<CR>")

@@ -7,6 +7,9 @@ sudo add-apt-repository -y ppa:neovim-ppa/unstable
 sudo apt-get update -y
 sudo apt-get install -y neovim zsh tmux xclip
 
+echo 'Install neovim dependencies'
+sudo apt-get install -y ripgrep fzf
+
 echo 'Installing oh my zsh'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
