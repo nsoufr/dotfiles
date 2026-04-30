@@ -26,6 +26,7 @@ vim.opt.updatetime = 50
 
 -- keymaps
 local map = vim.keymap.set
+map("i", "jk", "<Esc>")
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
 map("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
