@@ -27,11 +27,11 @@ fi
 if [ "$machine" = "Linux" ]; then
     echo 'Installing required packages'
     if command -v apt-get &>/dev/null; then
-        sudo apt-get update -y && sudo apt-get install -y zsh git tmux
+        sudo apt-get update -y && sudo apt-get install -y zsh git tmux neovim
     elif command -v dnf &>/dev/null; then
-        sudo dnf install -y zsh git tmux
+        sudo dnf install -y zsh git tmux neovim
     elif command -v pacman &>/dev/null; then
-        sudo pacman -S --noconfirm zsh git tmux
+        sudo pacman -S --noconfirm zsh git tmux neovim
     else
         echo "Warning: could not detect package manager, skipping package install"
     fi
