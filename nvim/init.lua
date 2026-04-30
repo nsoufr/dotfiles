@@ -8,6 +8,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- options
 vim.g.mapleader = " "
+vim.cmd.colorscheme("habamax")
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.expandtab = true
@@ -49,9 +50,6 @@ require("lazy").setup({
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
-    config = function()
-      vim.cmd.colorscheme("catppuccin-macchiato")
-    end,
   },
 
   -- fuzzy search
