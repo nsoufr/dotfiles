@@ -27,11 +27,11 @@ fi
 if [ "$machine" = "Linux" ]; then
     echo 'Installing required packages'
     if command -v apt-get &>/dev/null; then
-        sudo apt-get update -y && sudo apt-get install -y zsh git tmux neovim
+        sudo apt-get update -y && sudo apt-get install -y zsh git tmux neovim ripgrep
     elif command -v dnf &>/dev/null; then
-        sudo dnf install -y zsh git tmux neovim
+        sudo dnf install -y zsh git tmux neovim ripgrep
     elif command -v pacman &>/dev/null; then
-        sudo pacman -S --noconfirm zsh git tmux neovim
+        sudo pacman -S --noconfirm zsh git tmux neovim ripgrep
     else
         echo "Warning: could not detect package manager, skipping package install"
     fi
@@ -94,5 +94,9 @@ ln -sf "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
 
 echo 'Setting up p10k config'
 ln -sf "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
+
+echo 'Setting up nvim config'
+mkdir -p "$HOME/.config"
+ln -sf "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
 
 echo 'Done! Open a new shell or run: exec zsh'
