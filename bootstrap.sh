@@ -97,6 +97,7 @@ ln -sf "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
 
 echo 'Setting up nvim config'
 mkdir -p "$HOME/.config"
+rm -f "$HOME/.config/nvim"
 ln -sf "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
 
 echo 'Done! Open a new shell or run: exec zsh'
