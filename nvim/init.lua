@@ -85,9 +85,8 @@ require("lazy").setup({
         ensure_installed = { "gopls", "solargraph" },
         automatic_installation = true,
       })
-      local lspconfig = require("lspconfig")
-      lspconfig.gopls.setup({ on_attach = on_attach })
-      lspconfig.solargraph.setup({ on_attach = on_attach })
+      vim.lsp.config("*", { on_attach = on_attach })
+      vim.lsp.enable({ "gopls", "solargraph" })
     end,
   },
 
