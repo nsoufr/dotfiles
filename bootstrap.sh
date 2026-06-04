@@ -75,9 +75,9 @@ else
 fi
 
 if [ ! -d "$DOTFILES_DIR" ]; then
-    echo "Cloning nandosousafr/dotfiles..."
+    echo "Cloning nsoufr/dotfiles..."
     mkdir -p "$HOME/dev/personal"
-    git clone https://github.com/nandosousafr/dotfiles.git "$DOTFILES_DIR"
+    git clone https://github.com/nsoufr/dotfiles.git "$DOTFILES_DIR"
 else
     echo 'dotfiles already cloned, skipping'
 fi
