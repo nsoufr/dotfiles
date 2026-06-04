@@ -19,6 +19,7 @@ alias k="kubctl"
 alias c="code ."
 alias be="bundle exec"
 alias r="be rails"
+alias v="nvim"
 
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
