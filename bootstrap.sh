@@ -117,9 +117,13 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
     # happens to use ${ZSH:-default} rather than ${ZSH-default}.
     # </dev/null keeps the installer off this script's stdin, which is the
     # pipe feeding bootstrap.sh under the usual `curl ... | bash`.
+    # --keep-zshrc: never let the installer write its own ~/.zshrc template.
+    # Ours is a symlink to the repo and the installer would otherwise back it up
+    # and replace it (order-independent safety, not just relying on the symlink
+    # step below running afterwards).
     ZSH="$HOME/.oh-my-zsh" sh -c \
         "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" \
-        "" --unattended </dev/null
+        "" --unattended --keep-zshrc </dev/null
 else
     echo 'oh-my-zsh already installed, skipping'
 fi
@@ -132,23 +136,40 @@ else
     echo 'powerlevel10k already installed, skipping'
 fi
 
+# Symlink a repo file into place. If the destination is already the right
+# symlink, repoint it silently. If it's an existing real file/dir (e.g. a
+# hand-made config on a fresh machine), back it up before replacing so a first
+# run never silently discards local edits.
+link() {
+    src="$1"; dst="$2"
+    if [ -L "$dst" ]; then
+        ln -sfn "$src" "$dst"
+    elif [ -e "$dst" ]; then
+        backup="$dst.pre-dotfiles.$(date +%Y%m%d-%H%M%S)"
+        echo "  backing up existing $dst -> $backup"
+        mv "$dst" "$backup"
+        ln -s "$src" "$dst"
+    else
+        ln -s "$src" "$dst"
+    fi
+}
+
 echo "Setting up global git config"
-ln -sf "$DOTFILES_DIR/.gitignore_global" "$HOME/.gitignore_global"
+link "$DOTFILES_DIR/.gitignore_global" "$HOME/.gitignore_global"
 git config --global core.excludesfile ~/.gitignore_global
 
 echo 'Setting up zsh config'
-ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
+link "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 
 echo 'Setting up tmux config'
-ln -sf "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
+link "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
 
 echo 'Setting up p10k config'
-ln -sf "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
+link "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
 
 echo 'Setting up nvim config'
 mkdir -p "$HOME/.config"
-rm -f "$HOME/.config/nvim"
-ln -sf "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
+link "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
 
 # oh-my-zsh is installed with --unattended, which deliberately skips chsh.
 # Don't call chsh here either: it prompts for a password, which would hang the
