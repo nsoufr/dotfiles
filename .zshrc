@@ -24,3 +24,6 @@ alias v="nvim"
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# machine-specific config, not tracked in the repo
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
